@@ -24,6 +24,8 @@
     <a href="Aula07_01.php">Clique aqui para acessar a aula 7_01</a><br>
     <a href="Aula07_02.php"> Clique aqui para acessar a aula 7_02</a><br>
     <a href="Aula07_03.php"> Clique aqui para acessar a aula 7_03</a><br>
-    <a href="Aula07_04.php">Clique aqui para acessar a aula 7_04</a>
+    <a href="Aula07_04.php">Clique aqui para acessar a aula 7_04</a><br>
+    <a href="Aula08_01.php">Cçique aqui para acessar a aula 8_01</a><br>
+    <a href="Aula09_01.php">Clique aqui para acessar a aula 9_1</a>
 </body>
 </html>
