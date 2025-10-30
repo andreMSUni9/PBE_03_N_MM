@@ -55,6 +55,16 @@ echo "<hr>";
 
     ];
     echo "<br>num = ".$num[1][0];
+
+    $naval =[
+        ["Agua","Agua","Submarino","Agua"],
+        ["Veleiro","Agua","Submarino","Agua"],
+        ["Agua","Agua","Submarino","Avião"],
+        ["Agua","Trem","Submarino","Agua"] 
+    ];
+    echo "<br>";
+    echo "Saida da tela: "." ".$naval[1][0]." ".$naval[3][1]." ".$naval[0][2]." ".$naval[2][3];
     ?>
+
 </body>
 </html>
