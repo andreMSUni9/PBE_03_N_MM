@@ -15,7 +15,6 @@ try {
         throw new Exception("Tipo de banco de dados não suportado em config.php");
     }
 
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO_ERRMODE_EXCEPTION);
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
 } 

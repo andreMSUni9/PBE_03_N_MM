@@ -1,31 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programação Back-End - PHP</title>
-</head>
-<body>
-    <h1>Testando php - 28/08/25</h1>
+<?php
+require_once 'config.php';
+require_once 'header.php'; 
+?>
 
-    <?php
-    echo "Meu Projeto começa agora!". "<br>";
-    echo "Olha ai em"
-    ?>
+<h1>Banco de Dados - PHP PDO (CRUD)</h1>
+<p>Utilize o menu acima para navegar nas operações.</p>
 
-    <br>
-    <a href="pg04_1.php">Clique aqui para aula 1</a>  <br>
-    <a href="pg04_2.php">Clique para a pagina 2</a> <br>
-    <a href="Aula05_01.php"> Clique para acessar a aula 5_01</a> <br>
-    <a href="Aula05_02.php">Clique para acessar a Aula 5_02</a> <br>
-    <a href="Aula06_01.php">Clique aqui para acessar a aula 6_01</a> <br>
-    <a href="Aula06_02.php">Clique aqui para acessar a aula 6_02</a><br>
-    <a href="teste01.php"> Clique aqui para a lição de casa do prof</a><br>
-    <a href="Aula07_01.php">Clique aqui para acessar a aula 7_01</a><br>
-    <a href="Aula07_02.php"> Clique aqui para acessar a aula 7_02</a><br>
-    <a href="Aula07_03.php"> Clique aqui para acessar a aula 7_03</a><br>
-    <a href="Aula07_04.php">Clique aqui para acessar a aula 7_04</a><br>
-    <a href="Aula08_01.php">Cçique aqui para acessar a aula 8_01</a><br>
-    <a href="Aula09_01.php">Clique aqui para acessar a aula 9_1</a>
-</body>
-</html>
+<h2>Ações de Configuração e Inicialização</h2>
+<p>Execute estes scripts para preparar o ambiente:</p>
+<ul>
+    <li><a href='cria_tabela_sqlite.php' target='_blank'>Criar Tabela - SQLite</a></li>
+    <li><a href='cria_tabela_mysql.php' target='_blank'>Criar Tabela - MySQL</a></li>
+</ul>
+
+<h2>Status Atual da Conexão</h2>
+<?php 
+try {
+    // Tenta conectar para mostrar o status
+    require_once 'conecta.php';
+    echo "<p style='color: green;'>Conexão bem-sucedida! Banco de Dados: **" . strtoupper(DB_TYPE) . "**</p>";
+} catch (Exception $e) {
+    echo "<p style='color: red;'>Falha na Conexão: " . htmlspecialchars($e->getMessage()) . "</p>";
+}
+?>
+
+<?php require_once 'footer.php'; ?>
