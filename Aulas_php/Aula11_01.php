@@ -39,8 +39,22 @@
         "av1"=>8,
         "av2"=>7.5
     ];
+    echo "<pre>";
+    print_r($estudante);
+    echo "</pre>";
+    echo "A Media da sua nota é =" . ($estudante['av1'] + $estudante['av2']) / 2;
     echo "<br>Estudante = ".$estudante['nome'];
 
+echo "<hr>";
+    echo "<h2>ARRAYS Multidimensional</h2>";
+
+    $num =[
+        [1,2,3],
+        [4,5,6],
+        [7,8,9]
+
+    ];
+    echo "<br>num = ".$num[1][0];
     ?>
 </body>
 </html>
